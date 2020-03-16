@@ -1,0 +1,12 @@
+apply plugin: 'war'
+
+project.webAppDirName = 'Survey/'
+
+repositories {
+   mavenCentral()
+}
+
+war {
+    enabled=true
+    archiveName 'SWE645_HW1.war'
+}
