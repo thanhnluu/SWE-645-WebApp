@@ -16,12 +16,12 @@ node {
     }
 
     stage('Build image') {
-        app = docker.build("swe645_hw1:latest")
+        app = docker.build("thanhnluu/swe645:swe645_hw1")
     }
 
     stage('Push image') {
         docker.withRegistry('', 'fe79f61e-a6cd-4503-a0c6-a35df2064184') {
-            app.push('thanhnluu/swe645:swe645_hw1')
+            app.push()
         }
     }
 }
