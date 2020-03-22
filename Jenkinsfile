@@ -20,8 +20,6 @@ node {
     }
 
     stage('Push image') {
-        docker.withRegistry('https://hub.docker.com', 'fe79f61e-a6cd-4503-a0c6-a35df2064184') {
-            app.push()
-        }
+        app.push()
     }
 }
