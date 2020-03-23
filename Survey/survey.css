@@ -8,7 +8,7 @@ h1{
 form{
     border-style: double;
     border-width: 10px;
-    border-color: silver;
+    border-color: red;
 }
 .gold{
     background-color: #FFCC33
